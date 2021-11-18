@@ -1,0 +1,148 @@
+body {
+    font-family: 'Major Mono Display', monospace;
+    /* font-family: 'Syne Mono', monospace; */
+    color: white;
+}
+
+#change-color-btn {
+    padding: 1em;
+}
+
+/* use javascript to change background color */
+#carouselExampleControls {
+    background-color: turquoise;
+}
+
+.carousel-inner {
+    margin-top: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 2em 5em;
+}
+
+.carousel-item h1{
+    font-family: 'Syne Mono', monospace;
+}
+
+#about-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: sienna;
+    padding: 6em 0em;
+}
+
+.image-div {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+#name {
+    font-family: 'Syne Mono', monospace;
+    margin-bottom: 1em;
+}
+
+.text {
+    width: 40%;
+    padding: 0em 1em;
+}
+
+#school {
+    color: gold;
+}
+
+.purp {
+    color: magenta;
+}
+
+#sp {
+    color: orange;
+}
+
+#port {
+    color: yellowgreen;
+}
+
+#fr {
+    color: blue;
+}
+
+#jap {
+    color: white;
+}
+
+#bjj {
+    color: lightcoral;
+}
+
+#skills {
+    margin: 0em;
+    padding: 3em 0em;
+}
+
+#skills p.h1{
+    margin: 1em 0em;
+    text-align: center;
+}
+
+#skills p.h5 {
+    margin: 0em 2.5em;
+}
+
+.progress {
+    margin-top: none;
+    margin-bottom: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.progress-bar {
+    font-weight: 700;
+}
+
+
+
+
+
+
+/*footer, set background color, set margin and padding*/
+footer {
+    background-color: black;
+    margin: 0px;
+    display: inline-flex;
+    width: 100%;
+    padding: 2em 0em;
+    justify-content: space-around;
+}
+
+/*copy right*/
+footer .copyright{
+    display: flex;
+    width: 15%;
+    height: auto;
+    color: white;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+/*flex container holding icons*/
+.contact-link {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.contact-link a {
+    align-self: center;
+}
+
+/*icons*/
+.contact-link img {
+    height: 2em;
+    width: auto;
+}

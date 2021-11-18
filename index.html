@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--always have title, link to style sheet, link to fonts-->
+        <meta charset="utf=8">
+        <title>Interactive</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <!--link to bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--link to google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Syne+Mono&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--js dependency for bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <div id="main">
+            <!--full nav bar using only bootstrap-->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <img src="./images/icons8-guy-fawkes-mask-64.png" alt="">
+                    <!--collapse makes it all skew to the left-->
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-me">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Quatre</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!--carousel with quotes-->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h1 class="d-block w-100">
+                            "You must be the change you wish to see in the world."
+                        </h1>
+                        <cite class="h3">Mahatma Gandhi</cite>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="d-block w-100">
+                            "Whether you think you can or you think you can’t, you’re right."
+                        </h1>
+                        <cite class="h3">Henry Ford</cite>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="d-block w-100">
+                            "Tis better to have loved and lost than to have never loved at all."
+                        </h1>
+                        <cite class="h3">Alred Lord Tennyson</cite>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="d-block w-100">
+                            "Perhaps a sin that humbles you is better than a good deed that makes you arrogant."
+                        </h1>
+                        <cite class="h3">Hamza Yusuf</cite>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="d-block w-100">
+                            "Be curious. Read widely. Try new things. What people call intelligence just boils down to curiosity."
+                        </h1>
+                        <cite class="h3">Aaron Swartz</cite>
+                    </div>
+                </div>
+                <!--add controls to our sliding quotes-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div id="change-color-btn" class="d-grid col-3 mx-auto">
+                    <button type="button" class="btn btn-dark" onclick="">Click me to change color!</button>
+                </div>
+            </div>
+
+            <!--traditional about me section-->
+            <div id="about-me">
+                <div class="image-div">
+                    <img class="rounded float-end" src="./images/headshot.png" alt="">
+                </div>
+
+                <div class="text">
+                    <h1 id="name">0xSTVNDZ</h2>
+                    <p class="h3">About me</p>
+                    <p>
+                        Hey! I'm <span class="purp">Steve</span>, I am a computer scientist who is absolutely geeked over how much there 
+                        is to learn! Former computer science student from <span id="school">Adelphi University</span>. I am currently 
+                        pursuing Frontend Development as a full time career and eventually Full-Stack. Formerly pursued 
+                        Penetration Testing (Ethical Hacking).
+                    </p>
+                    <p>
+                        I am 22 years old with a fair amount of knowledge in the offense side of cybersecurity. 
+                        Slowly but surely adding full stack dev to my knowledge base.
+                    </p>
+                    <p>
+                        In my free time I like to read all types of books. I am currently learning <span id="sp">Spanish</span>, 
+                        <span id="port">Portuguese</span>, <span id="fr">French</span> and <span id="jap">Japanese</span> on 
+                        Duolingo! I am a <span id="bjj">Brazilian Jiu Jitsu</span> Practitioner. Carpe Diem.
+                    </p>
+                </div>
+            </div>
+
+            <div id="skills">
+                <p class="h1">Skills</p>
+                <!--progress bars from bootstrap-->
+                <p class="h5">HTML/CSS</p>
+                <div class="progress" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+                <p class="h5">JavaScript/Python</p>
+                <div class="progress" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+                <p class="h5">React/Redux</p>
+                <div class="progress" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">45%</div>
+                </div>
+                <p class="h5">Java</p>
+                <div class="progress" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+                <p class="h5">Web/Network Hacking</p>
+                <div class="progress" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+                <p class="h5">Git/Github</p>
+                <div class="progress" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+                <p class="h5">Linux</p>
+                <div class="progress" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+            </div>
+
+            <!--Projects-->
+            <div id="projects">
+                <p class="h1">My Projects</p>
+            </div>
+        </div>
+    </body>
+
+    <!--links to socials-->
+    <footer>
+        <p class="copyright"> © 2021 0xSTVNDZ</p>
+        <div class="contact-link">
+            <a id="profile-link" target="_blank" href="https://twitter.com/0xSTVNDZ"><img src="./images/contactitems/twitter.svg" alt="Twitter"></a>
+        </div>
+        <div class="contact-link">
+            <a href="https://github.com/0xSTVNDZ"><img src="./images/contactitems/github.svg" alt="Github"></a>
+        </div>
+        <div class="contact-link">
+            <a href="https://www.linkedin.com/in/steven-hernandez-aa0a711a7/"><img src="./images/contactitems/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+        <div class="contact-link">
+            <a href="https://open.spotify.com/user/randomkid69?si=b2b85c454f03434b"><img src="./images/contactitems/spotify.svg" alt="Spotify"></a>
+        </div>
+    </footer>
+</html>
